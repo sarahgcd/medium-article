@@ -1,0 +1,96 @@
+/*Container
+Center it with width and margin: 50px auto
+Container is not responsive yet:
+Replace width by max-width (poor approach)*/
+body {
+  background-color: #F7F9FC;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  color: rgb(50, 50, 50);
+  line-height: 20px;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 38px;
+  line-height: 15px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 16px;
+  line-height: 10px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #A0A0A0;
+  font-size: 1.5em;
+  line-height: 10px;
+}
+
+
+a {
+  text-decoration: none;
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+a:hover {
+  color: #252526;
+}
+
+.banner{
+  background-image: url("https://source.unsplash.com/user/erondu/1600x900");
+  /*height: 650px;*/
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+.banner-content {
+  padding: 200px 0;
+}
+
+#description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  width: 700px;
+  margin: 50px auto
+}
+
+
+@media (max-width: 1200px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 576px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
